@@ -50,7 +50,7 @@ context forecast {
         "DETAIL"   : LargeString;
     };
     table type tt_results {
-        "signal_time"          : UTCDateTime;
+        "signal_time"          : LocalDate;
         "signal_value"         : Double;
         "kts_1"                : Double;
         "kts_1_lowerlimit_95%" : Double;
@@ -85,6 +85,6 @@ context forecast {
         "Last4WDays"                : Integer;
         "LastWMonth"                : Integer;
         "BeforeLastWMonth"          : Integer;
-		"signal_value"              : Double;
+        "signal_value"              : Double;
     };
 };
